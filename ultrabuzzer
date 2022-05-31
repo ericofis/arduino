@@ -13,6 +13,7 @@ void loop () {
     delay(500);
     if(distanceSensor.measureDistanceCm() < 10){
       digitalWrite(5,HIGH);
-    }
-    digitalWrite(5,LOW);    
+    }else{
+      digitalWrite(5,LOW);
+    }     
 }
